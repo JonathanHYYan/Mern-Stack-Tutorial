@@ -19,6 +19,7 @@ const Home = () => {
     };
 
     fetchWorkouts();
+    // eslint-disable-next-line 
   }, []);
 
   return (
