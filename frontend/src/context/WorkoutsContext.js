@@ -11,13 +11,19 @@ export const workoutsReducer = (state, action) => {
       return {
         workouts: [action.payload, ...state.workouts],
       };
+    case "DELETE_WORKOUT":
+      return {
+        workouts: state.workouts.filter(
+          (workout) => workout._id != action.payload._id
+        ),
+      };
     default:
       return state;
   }
 };
 
 export const WorkoutsContextProvider = ({ children }) => {
-  const[state, dispatch] = useReducer(workoutsReducer, {
+  const [state, dispatch] = useReducer(workoutsReducer, {
     workouts: null,
   });
 
