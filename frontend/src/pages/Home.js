@@ -19,8 +19,7 @@ const Home = () => {
     };
 
     fetchWorkouts();
-    // eslint-disable-next-line 
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="home">
