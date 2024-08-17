@@ -10,6 +10,8 @@ const Home = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
+      // The lack of URL here means its going to the package.json "{proxy:}" When live and has domain we might need to do something here.
+      // In prod every request will need to point to the correct end points
       const response = await fetch("/api/workouts");
       const json = await response.json();
 
