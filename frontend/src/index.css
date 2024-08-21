@@ -1,21 +1,19 @@
-/* Google Font */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,800;1,500&display=swap");
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
 
+/* layout */
 :root {
   --primary: #1aac83;
   --error: #e7195a;
 }
-
 body {
   background: #f1f1f1;
   margin: 0;
   font-family: "Poppins";
 }
-
 header {
   background: #fff;
 }
-
 header .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -24,47 +22,40 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
-
 header a {
-  color: #333;;
+  color: #333;
   text-decoration: none;
 }
-
-.pages {
+.pages{
   max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
 }
 
-/* Homepage */
-
-.home{
+/* homepage */
+.home {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 100px;
 }
-
 .workout-details {
   background: #fff;
   border-radius: 4px;
   margin: 20px auto;
   padding: 20px;
   position: relative;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
 }
-
 .workout-details h4 {
   margin: 0 0 10px 0;
   font-size: 1.2em;
   color: var(--primary);
 }
-
 .workout-details p {
   margin: 0;
   font-size: 0.9em;
   color: #555;
 }
-
 .workout-details span {
   position: absolute;
   top: 20px;
@@ -76,11 +67,10 @@ header a {
   color: #333;
 }
 
-/* New Workout Form */
+/* new workout form */
 label, input {
   display: block;
 }
-
 input {
   padding: 10px;
   margin-top: 10px;
@@ -90,18 +80,16 @@ input {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
 form button {
   background: var(--primary);
   border: 0;
   color: #fff;
   padding: 10px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   border-radius: 4px;
   cursor: pointer;
 }
-
-div .error {
+div.error {
   padding: 10px;
   background: #ffefef;
   border: 1px solid var(--error);
@@ -109,8 +97,7 @@ div .error {
   border-radius: 4px;
   margin: 20px 0;
 }
-
-input .error {
+input.error {
   border: 1px solid var(--error);
 }
 
@@ -122,6 +109,17 @@ nav {
 nav a {
   margin-left: 10px;
 }
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+}
+
 /* auth forms */
 form.signup, form.login {
   max-width: 400px;
